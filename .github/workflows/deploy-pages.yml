@@ -41,7 +41,7 @@ jobs:
           elif [ -d build ]; then
             echo "path=build" >> "$GITHUB_OUTPUT"
           else
-            echo "Could not find build output directory (expected dist/ or build/)"
+            echo "Could not find build output directory (expected dist/ or build/)" >&2
             exit 1
           fi
 
